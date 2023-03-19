@@ -1,0 +1,7 @@
+---
+title: "Augmented Lattice"
+---
+
+The lattices can be augmented with interior points. A Degree 2 Simplex Lattice augmented with interior points, including a center point:
+
+This model allows the interior of the triangle to be explored properly.

@@ -1,0 +1,15 @@
+---
+title: "Triangular Coordinate Systems"
+---
+
+Consider a mixture with just two constituents \'x1\' and \'x2\'. These constituents can be mixed in any proportion from pure \'x1\' to pure \'x2\'.
+
+The mixture can be represented by a straight line where any possible composition is a point on the line:
+
+Now consider a mixture with three constituents \'x1\', \'x2\' and \'x3\'. This time the diagram is a little more complicated but it can be represented by a triangle using a triangular coordinate system:
+
+The first image shows only x1. The x1 vertex represents pure x1. The proportion of x1 reduces to zero at the opposite side of the triangle.
+
+It is harder to illustrate the idea graphically for more than three components but the three component model allows explanation of all the concepts. It will make life easier if I assume a three mixture designs in the explanations.
+
+[previous: Mixture Designs](MixtureDesigns.qmd)

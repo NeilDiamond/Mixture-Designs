@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MixtureExperiemnts",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This is an experimental site."
+  },
+  {
+    "objectID": "objectives.html",
+    "href": "objectives.html",
+    "title": "Objectives",
+    "section": "",
+    "text": "Experimental design is an excellent way of finding the best composition for a mixture.\nThe methods that we have used so far can be applied but do not give the best results. The proportions of the constituents are not independent but must sum to 100%\nIn this section we look at how to analyze mixture designs using Minitab.\nAfter completing this section you will be able to:\n\nset up and analyze a mixture design using Minitab\n\nNext: MixtureDesigns"
+  },
+  {
+    "objectID": "MixtureDesigns.html",
+    "href": "MixtureDesigns.html",
+    "title": "Mixture Designs",
+    "section": "",
+    "text": "Mixtures are created by combining several ingredients (or components). They have the characteristic that the sum of the proportions of the components must equal 1. For example if there are three components x1, x2 and x3 the mix might be:\nMixtures are common and finding the best mix is often important. The types of experiments discussed previously in this course can be used but don't work particularly well. The forms of regression equations that are used do not model the response surfaces of most mixtures at all well. The positions of the design points in a conventional experimental array are not efficient in revealing the properties of the mixture.\nIt is better to use a specialized mixture design. In this section I will avoid the mathematics of mixture designs but concentrate on how to analyze mixtures using Minitab.\nprevious: Objectives\nnext: Triangular Coordinate Systems"
+  },
+  {
+    "objectID": "TriangularCooordinateSystens.html",
+    "href": "TriangularCooordinateSystens.html",
+    "title": "Triangular Coordinate Systems",
+    "section": "",
+    "text": "Consider a mixture with just two constituents 'x1' and 'x2'. These constituents can be mixed in any proportion from pure 'x1' to pure 'x2'.\nThe mixture can be represented by a straight line where any possible composition is a point on the line:\nNow consider a mixture with three constituents 'x1', 'x2' and 'x3'. This time the diagram is a little more complicated but it can be represented by a triangle using a triangular coordinate system:\nThe first image shows only x1. The x1 vertex represents pure x1. The proportion of x1 reduces to zero at the opposite side of the triangle.\nIt is harder to illustrate the idea graphically for more than three components but the three component model allows explanation of all the concepts. It will make life easier if I assume a three mixture designs in the explanations.\nprevious: Mixture Designs"
+  },
+  {
+    "objectID": "TriangularCoordinateSystems.html",
+    "href": "TriangularCoordinateSystems.html",
+    "title": "Triangular Coordinate Systems",
+    "section": "",
+    "text": "Consider a mixture with just two constituents 'x1' and 'x2'. These constituents can be mixed in any proportion from pure 'x1' to pure 'x2'.\nThe mixture can be represented by a straight line where any possible composition is a point on the line:\nNow consider a mixture with three constituents 'x1', 'x2' and 'x3'. This time the diagram is a little more complicated but it can be represented by a triangle using a triangular coordinate system:\nThe first image shows only x1. The x1 vertex represents pure x1. The proportion of x1 reduces to zero at the opposite side of the triangle.\nIt is harder to illustrate the idea graphically for more than three components but the three component model allows explanation of all the concepts. It will make life easier if I assume a three mixture designs in the explanations.\nprevious: Mixture Designs"
+  },
+  {
+    "objectID": "TheSimplexCentroid.html",
+    "href": "TheSimplexCentroid.html",
+    "title": "The Simplex Centroid",
+    "section": "",
+    "text": "One design, called the ‘simplex centroid’, is shown below:\n\n\n\n\n\nIt is a useful design, but not for all purposes."
+  },
+  {
+    "objectID": "TheSimplexAugmentedDesign.html",
+    "href": "TheSimplexAugmentedDesign.html",
+    "title": "Simplex and Augmented Lattice Designs",
+    "section": "",
+    "text": "Other Design Types that you should be aware of include the Simplex Lattice designs, illustrated below:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[1] 0.045\n\n\n[1] 0.045\n\n\n[1] 0.045\n\n\nFigure 1: Different Mixture Designs\n\n\nThe number and position of points determines the order of the regression equation. The linear model only allow terms in the main components to be evaluated:\n\\[\\hat{y}=\\beta_1x_1+\\beta_2x_2+\\beta_3x_3\\]\n(notice that there is no mean term \\(\\beta_0\\) in the regression equation)\nThe quadratic model includes the two-way interactions:\n\\[\\hat{y}=\\beta_1x_1+\\beta_2x_2+\\beta_3x_3+\\beta_{12}x_1x_2+\\beta_{13}x_1x_3+\\beta_{23}x_2x_3\\]\nThe cubic, and special cubics, include three-way interactions. The ‘special cubic’ omits some of the possible interactions.\n\nAugmented Lattice\nThe lattices can be augmented with interior points. A Degree 2 Simplex Lattice augmented with interior points, including a center point:\n\n\n\n\n\nThis model allows the interior of the triangle to be explored properly."
+  },
+  {
+    "objectID": "AugmentedLattice.html",
+    "href": "AugmentedLattice.html",
+    "title": "Augmented Lattice",
+    "section": "",
+    "text": "The lattices can be augmented with interior points. A Degree 2 Simplex Lattice augmented with interior points, including a center point:\nThis model allows the interior of the triangle to be explored properly."
+  },
+  {
+    "objectID": "L-SimplexExtremeVertices.html",
+    "href": "L-SimplexExtremeVertices.html",
+    "title": "L-Simplex and Extreme Vertices Designs",
+    "section": "",
+    "text": "Most mixtures are only viable within a reasonably small range of proportions. It is a waste of time to place points on the side of a triangle, because they do not contain all the components.\nThe L-Simplex designs are similar to simplex designs, except that it uses a triangle with sides parallel to, but inside the triangle of the Simplex design.\nYou may come across the term ‘pseudocomponents’. L-Simplex designs are analyzed using pseudocomponents. Pseudocomponents are defined to run from 0 to 1 using the interior triangle. Thus if x1 has an allowable range running from 0.2 to 0.8 its pseudocomponent has a proportion of 0 when x1 equals 0.2 and 1 when x1 = 0.8.\nThe L-Simplex will not always do the job. Concrete is made from a mix of cement powder, water and aggregate. The approximate proportions to give a satisfactory mix are known within fairly tight limits. We want to explore within this range:"
+  }
+]

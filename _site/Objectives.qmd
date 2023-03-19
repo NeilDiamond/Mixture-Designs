@@ -1,0 +1,16 @@
+---
+title: "Objectives"
+---
+
+Experimental design is an excellent way of finding the best composition for a mixture.
+
+The methods that we have used so far can be applied but do not give the best results. The proportions of the constituents are not independent but must sum to 100%
+
+In this section we look at how to analyze mixture designs using Minitab.
+
+After completing this section you will be able to:
+
+-   set up and analyze a mixture design using Minitab
+
+
+[Next: MixtureDesigns](MixtureDesigns.qmd)

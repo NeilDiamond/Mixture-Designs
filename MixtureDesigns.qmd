@@ -1,0 +1,13 @@
+---
+title: "Mixture Designs"
+---
+
+Mixtures are created by combining several ingredients (or components). They have the characteristic that the sum of the proportions of the components must equal 1. For example if there are three components x1, x2 and x3 the mix might be:
+
+Mixtures are common and finding the best mix is often important. The types of experiments discussed previously in this course can be used but don\'t work particularly well. The forms of regression equations that are used do not model the response surfaces of most mixtures at all well. The positions of the design points in a conventional experimental array are not efficient in revealing the properties of the mixture.
+
+It is better to use a specialized mixture design. In this section I will avoid the mathematics of mixture designs but concentrate on how to analyze mixtures using Minitab.
+
+[previous: Objectives](Objectives.qmd)
+
+[next: Triangular Coordinate Systems](TriangularCoordinateSystems.qmd)

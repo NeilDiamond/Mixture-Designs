@@ -1,0 +1,11 @@
+---
+title: "L-Simplex and Extreme Vertices Designs"
+---
+
+Most mixtures are only viable within a reasonably small range of proportions. It is a waste of time to place points on the side of a triangle, because they do not contain all the components.
+
+The L-Simplex designs are similar to simplex designs, except that it uses a triangle with sides parallel to, but inside the triangle of the Simplex design.
+
+You may come across the term 'pseudocomponents'. L-Simplex designs are analyzed using pseudocomponents. Pseudocomponents are defined to run from 0 to 1 using the interior triangle. Thus if x1 has an allowable range running from 0.2 to 0.8 its pseudocomponent has a proportion of 0 when x1 equals 0.2 and 1 when x1 = 0.8.
+
+The L-Simplex will not always do the job. Concrete is made from a mix of cement powder, water and aggregate. The approximate proportions to give a satisfactory mix are known within fairly tight limits. We want to explore within this range:

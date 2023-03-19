@@ -1,0 +1,90 @@
+---
+title: "Simplex and Augmented Lattice Designs"
+---
+
+Other Design Types that you should be aware of include the Simplex Lattice designs, illustrated below:
+
+```{r, linear}
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-out: 30%
+#| fig-asp: 0.618
+library(mixexp2)
+
+des1 <- mixexp::SLD(3, 1)
+plot1 <- mixexp::DesignPoints(des1)
+```
+
+
+
+```{r, quadratic}
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-out: 30%
+#| fig-asp: 0.618
+des2 <- mixexp::SLD(3, 2)
+plot2 <- mixexp::DesignPoints(des2)
+```
+
+```{r, cubic}
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-out: 30%
+#| fig-asp: 0.618
+des3 <- mixexp2::SLDnew(3, 3, center=F)
+plot3 <- mixexp::DesignPoints(des3)
+```
+
+
+```{r, all}
+#| echo: false
+#| warning: false
+#| message: false
+#| label: fig-mpg
+#| fig-show: hold
+#| fig-cap: "Different Mixture Designs"
+#| fig-subcap:
+#|   - "Degree 1"
+#|   - "Degree 2"
+#|   - "Degree 3"
+#| layout-ncol: 3
+#| fig-out: 30%
+#| fig-asp: 0.618 
+plot1
+plot2
+plot3
+
+```
+
+
+The number and position of points determines the order of the regression equation. The linear model only allow terms in the main components to be evaluated:
+
+$$\hat{y}=\beta_1x_1+\beta_2x_2+\beta_3x_3$$
+
+(notice that there is no mean term $\beta_0$ in the regression equation)
+
+The quadratic model includes the two-way interactions:
+
+$$\hat{y}=\beta_1x_1+\beta_2x_2+\beta_3x_3+\beta_{12}x_1x_2+\beta_{13}x_1x_3+\beta_{23}x_2x_3$$
+
+The cubic, and special cubics, include three-way interactions. The 'special cubic' omits some of the possible interactions.
+
+
+### Augmented Lattice
+
+The lattices can be augmented with interior points. A Degree 2 Simplex Lattice augmented with interior points, including a center point:
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+library(mixexp2)
+des <- mixexp2::SLDnew(3, 2, center=T, axial=T)
+mixexp::DesignPoints(des)
+```
+
+
+This model allows the interior of the triangle to be explored properly.

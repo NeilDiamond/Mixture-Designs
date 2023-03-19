@@ -1,0 +1,17 @@
+---
+title: "The Simplex Centroid"
+---
+
+One design, called the 'simplex centroid', is shown below:
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+library(mixexp2)
+des <- mixexp2::SLDnew(3, 2, center=T)
+mixexp::DesignPoints(des, cornerlabs=NULL, axislabs="")
+```
+
+It is a useful design, but not for all purposes.
+
